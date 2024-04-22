@@ -71,7 +71,14 @@ class HomeScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         fontSize: 25,
                         color: Colors.white),
-                  )
+                  ),
+                  Text(
+                    '34 C',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.white),
+                  ),
                 ],
               ),
             )
