@@ -72,9 +72,12 @@ class HomeScreen extends StatelessWidget {
                         fontSize: 25,
                         color: Colors.white),
                   ),
-                  Image.asset('assets/4.png'),
+                  Image.asset(
+                    'assets/2.png',
+                    scale: 1.5,
+                  ),
                   const Text(
-                    '20 C  ',
+                    '20C  ',
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 55,
@@ -93,6 +96,120 @@ class HomeScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         fontSize: 12,
                         color: Colors.white),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                            'assets/11.png',
+                            scale: 8,
+                          ),
+                          const Column(
+                            children: [
+                              Text(
+                                'Sunrise',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white),
+                              ),
+                              Text(
+                                '5:35 am',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            'assets/12.png',
+                            scale: 8,
+                          ),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Sunset',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white),
+                              ),
+                              Text(
+                                '5:35 pm',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white),
+                              )
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5.0),
+                    child: Divider(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                            'assets/13.png',
+                            scale: 8,
+                          ),
+                          const Column(
+                            children: [
+                              Text(
+                                'Temp max',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white),
+                              ),
+                              Text(
+                                '30 c',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            'assets/14.png',
+                            scale: 8,
+                          ),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Temp min',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white),
+                              ),
+                              Text(
+                                '12 c',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white),
+                              )
+                            ],
+                          )
+                        ],
+                      )
+                    ],
                   )
                 ],
               ),
