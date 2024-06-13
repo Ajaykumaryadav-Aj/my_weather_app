@@ -62,9 +62,9 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                         Text(
-                          "${state.weather.country}",
-                          style:const TextStyle(
+                        Text(
+                          "${state.weather.areaName}",
+                          style: const TextStyle(
                               fontWeight: FontWeight.w300, color: Colors.white),
                         ),
                         const SizedBox(
@@ -156,8 +156,8 @@ class HomeScreen extends StatelessWidget {
                             )
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 5.0),
                           child: Divider(
                             color: Colors.grey,
                           ),
@@ -220,7 +220,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                   );
                 } else {
-                  return Container(child: Text('Kuchh bi nhi'),);
+                  return Container(
+                    child: const Text('Kuchh bi nhi'),
+                  );
                 }
               },
             )
